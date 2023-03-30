@@ -1,0 +1,36 @@
+extends layout.pug 
+
+block content
+
+
+
+  .container 
+    if error 
+        p.error Some error occured! Try again.
+    if success 
+        p.success It has been successfully submitted
+    form.form(action="/create" method ='POST')
+      h1  Create note 
+
+      
+
+
+      label Add a title 
+      input.input(type="text" name='title')
+
+      label Description 
+      textarea.input(type ="text" name ="description")
+
+      button.btn Create Note
+      h1 Your Notes 
+
+  .container2 
+      each note in create 
+          .notes-container 
+            a.note(href=`/create/${create.id}`) #{note.title}
+            a.update(href='#') update
+            a.delete(href='#') delete
+
+
+   
+
