@@ -67,7 +67,7 @@ a:hover {
 }
 /*create*/
 .h1 {
-  font-size: 25px;
+  font-size: 18px;
   margin: 20px 0;
 }
 .form {
@@ -104,28 +104,41 @@ a:hover {
 .container2 {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
-.notes-container {
-  flex: 1 1 3rem;
+.allNotes{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.note-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  width: 60px;
-  margin: 10px;
+  width: 400px;
   padding: 25px;
 }
-.notes-container a.update,
+.note-container a{
+  color: black;
+  line-height: 3rem;
+}
+
+.btns{
+  display: flex;
+}
+.note-container a.update,
 a.delete {
-  padding: 0.7rem;
   cursor: pointer;
   margin: 14px;
   background-color: rgb(248, 201, 242);
@@ -133,8 +146,12 @@ a.delete {
   left: 0;
   right: 0;
   width: 100px;
+  border-radius: 20px;
+  padding: 0 25px;
+ 
+
 }
-.notes-container a:hover {
+.note-container a:hover {
   color: rgb(241, 132, 78);
   cursor: pointer;
 }
