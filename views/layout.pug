@@ -1,20 +1,21 @@
 doctype html
 html(lang="en")
   head
-    title  Planner
+    title  Reviews
     link(rel="stylesheet", href="/static/styles.css")
   body 
     header.navbar 
       h1
-        a(href='/') Planner
+        a(href='/') Reviews
 
       nav.nav 
         a(href='/') Home 
-        a(href='/create') New Note
-        a(href='/allnotes') All notes
+        a(href='/create') New Review
+        a(href='/films') All reviews
 
         
 
         
-    block content 
+    block content
+    script(src="/static/javascript.js")  
 

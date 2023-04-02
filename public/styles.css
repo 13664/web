@@ -78,7 +78,7 @@ a:hover {
   width: 100%;
   display: block;
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 1.5 rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: 1px solid #ccc;
   margin-bottom: 20px;
@@ -95,7 +95,7 @@ a:hover {
 .btn:hover {
   background-color: pink;
 }
-/*notes*/
+/*reviews*/
 .container1 h1 {
   text-align: center;
   font-size: 1.2rem;
@@ -111,15 +111,18 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-.allNotes{
+.films {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   gap: 2rem;
   padding: 2rem;
 }
+.film {
+  padding: 0 20px;
+}
 
-.note-container {
+.film-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,16 +131,19 @@ a:hover {
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   width: 400px;
   padding: 25px;
+  inline-size: 300px;
+  overflow-wrap: break-word;
 }
-.note-container a{
+.film-container p {
   color: black;
-  line-height: 3rem;
+  line-height: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.btns{
+.btns {
   display: flex;
 }
-.note-container a.update,
+.film-container a.update,
 a.delete {
   cursor: pointer;
   margin: 14px;
@@ -147,11 +153,9 @@ a.delete {
   right: 0;
   width: 100px;
   border-radius: 20px;
-  padding: 0 25px;
- 
-
+  padding: 15px;
 }
-.note-container a:hover {
+.film-container a:hover {
   color: rgb(241, 132, 78);
   cursor: pointer;
 }

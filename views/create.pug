@@ -9,19 +9,22 @@ block content
         p.error Some error occured! Try again.
     if success 
         p.success It has been successfully submitted
-    form.form(action="/create" method ='POST')
-      h1  Create note 
+    form.form(action=id ? `/${id}/update` : "/create" method ='POST')
+      h1  Create a review 
 
       
 
 
       label Add a title 
-      input.input(type="text" name='title')
+      input.input(type="text" name='title' value=title)
 
       label Description 
-      textarea.input(type ="text" name ="description")
+      textarea.input(type ="text" name ="description"  data-value=description ).description
 
-      button.btn Create Note
+      label  Rating 
+      input.input(type="number" name='rating' min = "1" max="10" value=rating)
+
+      button.btn Create Review
 
  
 
