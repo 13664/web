@@ -101,6 +101,7 @@ app.get("/:id/update", (req, res) =>{
     res.render('create', {title: film.title, description: film.description, rating: film.rating, id: id})
   })
 })
+
 app.post("/:id/update", (req, res) =>{
   const form = req.body;
   if (isNullOrEmpty(form.title) ||

@@ -12,6 +12,7 @@ a {
 a:hover {
   color: rgb(232, 159, 232);
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -62,7 +63,7 @@ a:hover {
   line-height: 2;
   padding: 15px 20px;
   margin: 1rem 0;
-  background-color: rgb(247, 209, 209);
+  background-color: rgb(234, 150, 150);
   font-size: 1rem;
 }
 /*create*/
@@ -85,7 +86,7 @@ a:hover {
 }
 .btn {
   display: inline-block;
-  background: rgb(247, 209, 209);
+  background: rgb(236, 164, 164);
   border: none;
   font-size: 1.3rem;
   color: white;
@@ -137,7 +138,7 @@ a:hover {
 .film-container p {
   color: black;
   line-height: 2rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif
 }
 
 .btns {
@@ -147,7 +148,7 @@ a:hover {
 a.delete {
   cursor: pointer;
   margin: 14px;
-  background-color: rgb(248, 201, 242);
+  background-color: rgb(238, 167, 229);
   align-content: center;
   left: 0;
   right: 0;
